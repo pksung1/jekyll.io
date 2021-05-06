@@ -68,7 +68,7 @@ const OpacityScreen = () => {
 
 페이지 로드시 가운데 사각형이 3초동안 서서히 나타나는 애니메이션 입니다.
 
-1. Animated.Value 를 생성한다.
+**1. Animated.Value 를 생성한다.**
 
 ReactNative 문서에는 useRef로 만드는걸 권유하고 있습니다.
 
@@ -77,7 +77,7 @@ ReactNative 문서에는 useRef로 만드는걸 권유하고 있습니다.
 const anim = useRef(new Animated.Value(0)).current;
 ```
 
-2. 애니메이션을 동작시킵니다.
+**2. 애니메이션을 동작시킵니다.**
 
 useEffect훅을 사용해 만들었음으로 컴포넌트가 랜더링이 끝난 시점에 애니메이션을 실행합니다.
 ```js
@@ -95,7 +95,7 @@ usenativeDriver는 true로 해주는게 성능은 더 좋아집니다.
 
 간단하게는 JS스레드에서 실행되는게 아닌 네이티브 UI 스레드에서 실행할수 있도록 해주는 역할이라고 합니다.
 
-3. 애니메이션 동작 가능한 컴포넌트에 Animated.Value 값을 넣습니다.
+**3. 애니메이션 동작 가능한 컴포넌트에 Animated.Value 값을 넣습니다.**
 
 그냥 View 에 넣을경우 오류가 발생합니다.
 
